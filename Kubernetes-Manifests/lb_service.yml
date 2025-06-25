@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: my-webapp-service
+  labels:
+    app: my-webapp
+spec:
+  type: LoadBalancer
+  selector:
+    app: my-webapp    
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  
