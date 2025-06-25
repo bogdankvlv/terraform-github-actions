@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: my-webapp
-          image: ${{ secrets.DOCKERHUB_USERNAME }}/myimage:latest
+          image: bodya078/myimage:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
